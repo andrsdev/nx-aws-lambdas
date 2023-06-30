@@ -20,6 +20,18 @@
       "options": {
         "lintFilePatterns": ["packages/functions/**/*.ts"]
       }
+    },
+    "serve": {
+      "command": "sam build && sam local start-api",
+      "options": {
+        "cwd": "packages/functions"
+      }
+    },
+    "deploy": {
+      "command": "sam build && sam deploy --guided",
+      "options": {
+        "cwd": "packages/functions"
+      }
     }
   },
   "tags": []

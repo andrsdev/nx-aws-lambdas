@@ -15,7 +15,6 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-functions/functions": ["packages/functions/src/index.ts"],
       "@nx-functions/utils": ["packages/utils/src/index.ts"]
     }
   },
