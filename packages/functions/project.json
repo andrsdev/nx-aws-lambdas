@@ -5,13 +5,9 @@
   "projectType": "library",
   "targets": {
     "build": {
-      "executor": "@nx/js:tsc",
-      "outputs": ["{options.outputPath}"],
+      "command": "sam build",
       "options": {
-        "outputPath": "dist/packages/functions",
-        "main": "packages/functions/src/index.ts",
-        "tsConfig": "packages/functions/tsconfig.lib.json",
-        "assets": ["packages/functions/*.md"]
+        "cwd": "packages/functions"
       }
     },
     "lint": {
